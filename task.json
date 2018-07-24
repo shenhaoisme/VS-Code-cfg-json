@@ -4,7 +4,7 @@
         {
             "label": "build",
             "type": "shell",
-            // 编译参数 ggc -g ${file} -o ${fileDirname}${fileBasenameNoExtension}.exe
+            // 编译参数 gcc -g ${file} -o ${fileDirname}${fileBasenameNoExtension}.exe
             "windows": {
                 "command": "gcc",
                 "args": [
