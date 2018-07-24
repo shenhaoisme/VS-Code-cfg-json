@@ -1,43 +1,25 @@
+https://github.com/Microsoft/vscode-cpptools/blob/master/Documentation/LanguageServer/MinGW.md
+
 {
-    "configurations": [
-        {
-            "name": "Win32",
-            "intelliSenseMode": "msvc-x64",
-            "includePath": [
-                "${workspaceFolder}",
-                // 下面路径中的 D:/Aplications/MinGw 部分需要替换成你的 MinGw-w64 安装路径
-                "D:/Applications/MinGW/mingw64/include",
-                "D:/Applications/MinGW/mingw64/opt/include",
-                "D:/Applications/MinGW/mingw64/opt/lib/libffi-3.2.1/include",
-                "D:/Applications/MinGW/mingw64/x86_64-w64-mingw32/include",
-                "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
-                "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
-                "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/install-tools/include"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "__GNUC__=7",
-                "__cdecl=__attribute__((__cdecl__))"
-            ],
-            "browse": {
-                "path": [
-                    "${workspaceFolder}",
-                    // 下面路径中的 D:/Applications/MinGw 部分需要替换成你的 MinGw-w64 安装路径
-                    "D:/Applications/MinGW/mingw64/include",
-                    "D:/Applications/MinGW/mingw64/opt/include",
-                    "D:/Applications/MinGW/mingw64/opt/lib/libffi-3.2.1/include",
-                    "D:/Applications/MinGW/mingw64/x86_64-w64-mingw32/include",
-                    "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include",
-                    "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
-                    "D:/Applications/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/install-tools/include"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            },
-            "cStandard": "c11",
-            "cppStandard": "c++17"
-        }
-    ],
+    "configurations": [ 
+        { 
+            "name": "MinGW", 
+            "intelliSenseMode": "clang-x64", 
+            "compilerPath": "D:\\Applications\\MinGW\\mingw64\\bin\\gcc.exe", 
+            "includePath": [ 
+                "${workspaceFolder}" 
+            ], 
+            "defines": [], 
+            "browse": { 
+                "path": [ 
+                    "${workspaceFolder}" 
+                ], 
+                "limitSymbolsToIncludedHeaders": true, 
+                "databaseFilename": "" 
+            }, 
+            "cStandard": "c11", 
+            "cppStandard": "c++17" 
+        } 
+    ], 
     "version": 4
 }
